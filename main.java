@@ -16,8 +16,7 @@ public class Phoneme {
 	}
 
 	public static boolean checkVowel(String symbol) {
-        // TODO: implement
-        return true;
+        return knownVowels.contains(symbol);
     }
 }
 
@@ -35,6 +34,6 @@ public class Syllable {
 
 public class main {
 	public static void main(String[] args) {
-
+        System.out.println(Phoneme.checkVowel("g"));
 	}
 }
